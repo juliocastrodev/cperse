@@ -1,0 +1,14 @@
+.page {
+  background-color: "lightblue";
+  min-height: "100vh";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.red {
+  color: red;
+}
