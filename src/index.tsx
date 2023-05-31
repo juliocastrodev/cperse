@@ -3,7 +3,7 @@ import { render } from "solid-js/web"
 
 import "./index.css"
 import "modern-normalize"
-import { App } from "./App"
+import App from "./App"
 
 const root = document.getElementById("root")
 
