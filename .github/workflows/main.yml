@@ -27,6 +27,7 @@ jobs:
         run: pnpm install
 
       - name: Build
+        # TODO: remove base option when domain is properly set
         run: pnpm build --base=/cperse
 
       - name: Deploy to GitHub Pages

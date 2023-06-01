@@ -3,11 +3,14 @@ import { Header } from "../../components/Header/Header"
 import { Fullscreen } from "../../components/Fullscreen/Fullscreen"
 import { Footer } from "../../components/Footer/Footer"
 import { NavBar } from "../../components/NavBar/NavBar"
+import { Sticky } from "../../components/Sticky/Sticky"
 
 const Contact = () => (
   <Fullscreen>
-    <Header />
-    <NavBar />
+    <Sticky>
+      <Header />
+      <NavBar />
+    </Sticky>
 
     {/* TODO: remove example section */}
     <section

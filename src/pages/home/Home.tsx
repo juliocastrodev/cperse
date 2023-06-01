@@ -4,12 +4,14 @@ import { Header } from "../../components/Header/Header"
 import { Fullscreen } from "../../components/Fullscreen/Fullscreen"
 import { Footer } from "../../components/Footer/Footer"
 import { NavBar } from "../../components/NavBar/NavBar"
+import { Sticky } from "../../components/Sticky/Sticky"
 
 const Home = () => {
   return (
     <Fullscreen>
-      <Header />
-      <NavBar />
+      <Sticky>
+        <Header />
+      </Sticky>
 
       <section class={styles.intro}>
         <div>
@@ -19,6 +21,10 @@ const Home = () => {
           </h2>
         </div>
       </section>
+
+      <Sticky>
+        <NavBar />
+      </Sticky>
 
       {/* TODO: remove example section */}
       <section
@@ -37,6 +43,7 @@ const Home = () => {
           Minima, velit!
         </p>
         <A href="/contact">Go to Contact Page</A>
+
         <div
           style={{
             width: "200px",
