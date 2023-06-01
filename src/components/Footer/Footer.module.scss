@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xxxl) var(--space-l) var(--space-l) var(--space-l);
+
+  height: 380px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxxl);
+  margin-left: auto;
+}
+
+.credits {
+  font-size: var(--font-size-small);
+  margin-top: auto;
+}
