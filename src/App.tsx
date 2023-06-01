@@ -6,7 +6,7 @@ const Contact = lazy(() => import("./pages/contact/Contact"))
 
 const App = () => {
   return (
-    <Router>
+    <Router base="/cperse">
       <Routes>
         <Route path="/contact" component={Contact} />
         <Route path="/" component={Home} />
