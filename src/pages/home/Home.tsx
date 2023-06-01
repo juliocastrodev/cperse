@@ -1,10 +1,11 @@
 import { A } from "@solidjs/router"
 import styles from "./Home.module.scss"
-import { Header } from "../../components/Header/Header"
-import { Fullscreen } from "../../components/Fullscreen/Fullscreen"
-import { Footer } from "../../components/Footer/Footer"
-import { NavBar } from "../../components/NavBar/NavBar"
-import { Sticky } from "../../components/Sticky/Sticky"
+import { Header } from "../../shared/components/Header/Header"
+import { Fullscreen } from "../../shared/components/Fullscreen/Fullscreen"
+import { Footer } from "../../shared/components/Footer/Footer"
+import { NavBar } from "../../shared/components/NavBar/NavBar"
+import { Sticky } from "../../shared/components/Sticky/Sticky"
+import { Banner } from "./components/Banner/Banner"
 
 const Home = () => {
   return (
@@ -13,14 +14,7 @@ const Home = () => {
         <Header />
       </Sticky>
 
-      <section class={styles.intro}>
-        <div>
-          <h1>Cynthia Perera</h1>
-          <h2>
-            Marketing Manager <br /> & UI Designer
-          </h2>
-        </div>
-      </section>
+      <Banner />
 
       <Sticky>
         <NavBar />
