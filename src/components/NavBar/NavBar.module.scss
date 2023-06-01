@@ -1,0 +1,26 @@
+.container {
+  height: 68px;
+
+  position: relative;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-xxxl);
+
+  a {
+    color: var(--color-dark);
+    text-decoration: none;
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  ul {
+    display: flex;
+    gap: var(--space-xxxl);
+
+    li:last-child a {
+      color: var(--color-primary);
+    }
+  }
+}

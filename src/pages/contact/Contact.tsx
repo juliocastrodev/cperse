@@ -2,10 +2,12 @@ import { A } from "@solidjs/router"
 import { Header } from "../../components/Header/Header"
 import { Fullscreen } from "../../components/Fullscreen/Fullscreen"
 import { Footer } from "../../components/Footer/Footer"
+import { NavBar } from "../../components/NavBar/NavBar"
 
 const Contact = () => (
   <Fullscreen>
     <Header />
+    <NavBar />
 
     {/* TODO: remove example section */}
     <section

@@ -3,11 +3,13 @@ import styles from "./Home.module.scss"
 import { Header } from "../../components/Header/Header"
 import { Fullscreen } from "../../components/Fullscreen/Fullscreen"
 import { Footer } from "../../components/Footer/Footer"
+import { NavBar } from "../../components/NavBar/NavBar"
 
 const Home = () => {
   return (
     <Fullscreen>
       <Header />
+      <NavBar />
 
       <section class={styles.intro}>
         <div>
