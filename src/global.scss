@@ -1,0 +1,73 @@
+// Variables
+:root {
+  // Spaces
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-xxl: 40px;
+  --space-xxxl: 48px;
+
+  // Colors
+  --color-primary: #6c39be;
+  --color-secondary: #f2545b;
+  --color-success: #6fd8bc;
+  --color-dark: #303030;
+  --color-text: #5c5c5c;
+  --color-accent: #f6f7ff;
+  --color-light: #fdfefe;
+
+  // Font weights (https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-weight)
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+// Remove margins
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+// Setup font
+body {
+  color: var(--color-dark);
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: 56px;
+}
+h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: 40px;
+}
+h3 {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 32px;
+}
+h4 {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 24px;
+}
+h5,
+h6 {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 16px;
+}
+p,
+span {
+  font-weight: var(--font-weight-normal);
+  font-size: 16px;
+}
+a {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+}

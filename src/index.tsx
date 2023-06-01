@@ -1,8 +1,13 @@
 /* @refresh reload */
 import { render } from "solid-js/web"
 
-import "./index.css"
+import "./global.scss"
+import "@fontsource/poppins/400.css"
+import "@fontsource/poppins/500.css"
+import "@fontsource/poppins/600.css"
+import "@fontsource/poppins/700.css"
 import "modern-normalize"
+
 import App from "./App"
 
 const root = document.getElementById("root")
