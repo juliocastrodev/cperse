@@ -1,10 +1,13 @@
-export const RightArrowIcon = () => (
+import { IconProps } from "./Icon"
+
+export const RightArrowIcon = (props: IconProps) => (
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    style={{ ...props }}
   >
     <g clip-path="url(#clip0_469_828)">
       <path

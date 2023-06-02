@@ -1,10 +1,13 @@
-export const MediumIcon = () => (
+import { IconProps } from "./Icon"
+
+export const MediumIcon = (props: IconProps) => (
   <svg
     width="186"
     height="31"
     viewBox="0 0 186 31"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    style={{ ...props }}
   >
     <g clip-path="url(#clip0_330_779)">
       <path
