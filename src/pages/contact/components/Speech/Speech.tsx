@@ -1,4 +1,5 @@
 import { MailIcon } from "../../../../shared/components/Icons/MailIcon"
+import { Bold } from "../../../../shared/components/Bold/Bold"
 import styles from "./Speech.module.scss"
 
 export const Speech = () => {
@@ -20,7 +21,7 @@ export const Speech = () => {
       <div class={styles.email}>
         <MailIcon />
 
-        <p>cyn.perera@gmail.com</p>
+        <Bold>cyn.perera@gmail.com</Bold>
       </div>
     </div>
   )
