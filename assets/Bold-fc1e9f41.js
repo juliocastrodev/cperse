@@ -1,0 +1,1 @@
+import{i as r,c as n,t as o}from"./index-905a0956.js";const s=o("<span></span>"),l=t=>(()=>{const e=s.cloneNode(!0);return r(e,()=>t.children),n(()=>e.style.setProperty("font-weight",`var(--font-weight-${t.extra?"bold":"semi-bold"})`)),e})();export{l as B};
