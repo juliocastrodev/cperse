@@ -4,9 +4,10 @@ import styles from "./NavBar.module.scss"
 export const NavBar = () => {
   return (
     <nav class={styles.nav}>
-      <A href="/">cperse.com</A>
-
       <ul>
+        <li>
+          <A href="/">cperse.com</A>
+        </li>
         <li>
           <A href="/">Inicio</A>
         </li>

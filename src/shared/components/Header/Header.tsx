@@ -1,3 +1,4 @@
+import { HamburgerIcon } from "../Icons/HamburgerIcon"
 import { MailIcon } from "../Icons/MailIcon"
 import styles from "./Header.module.scss"
 
@@ -10,6 +11,10 @@ export const Header = () => {
         <MailIcon />
 
         <p>cyn.perera@gmail.com</p>
+      </div>
+
+      <div class={styles.hamburger}>
+        <HamburgerIcon />
       </div>
     </header>
   )

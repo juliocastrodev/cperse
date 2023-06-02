@@ -1,3 +1,16 @@
+// Media query utilities
+@mixin mobile {
+  @media only screen and (max-width: 481px) {
+    @content;
+  }
+}
+
+@mixin small-device {
+  @media only screen and (max-width: 680px) {
+    @content;
+  }
+}
+
 // Variables
 :root {
   // Spaces
@@ -40,6 +53,32 @@
   --font-size-h4: 24px;
   --font-size-regular: 16px;
   --font-size-small: 12px;
+
+  @include small-device {
+    --font-size-h1: 35px;
+    --font-size-h2: 25px;
+    --font-size-h3: 20px;
+    --font-size-h4: 15px;
+    --font-size-regular: 10px;
+    --font-size-small: 7.5px;
+
+    --space-05: 2.5px;
+    --space-1: 5px;
+    --space-2: 10px;
+    --space-3: 15px;
+    --space-4: 20px;
+    --space-5: 25px;
+    --space-6: 30px;
+    --space-7: 35px;
+    --space-8: 40px;
+    --space-9: 45px;
+    --space-10: 50px;
+    --space-11: 55px;
+    --space-12: 60px;
+    --space-13: 65px;
+    --space-14: 70px;
+    --space-15: 75px;
+  }
 }
 
 // Reset certain defaults
