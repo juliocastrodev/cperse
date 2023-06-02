@@ -3,7 +3,7 @@ import styles from "./Header.module.scss"
 
 export const Header = () => {
   return (
-    <header class={styles.container}>
+    <header class={styles.header}>
       <p>¿Quieres contactar conmigo?</p>
 
       <div class={styles.email}>

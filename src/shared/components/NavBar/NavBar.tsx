@@ -3,7 +3,7 @@ import styles from "./NavBar.module.scss"
 
 export const NavBar = () => {
   return (
-    <nav class={styles.container}>
+    <nav class={styles.nav}>
       <A href="/">cperse.com</A>
 
       <ul>
@@ -14,7 +14,7 @@ export const NavBar = () => {
           <A href="#">Portfolio</A>
         </li>
         <li>
-          <A href="#">Sobre mí</A>
+          <A href="/about-me">Sobre mí</A>
         </li>
         <li>
           <A href="/contact">Contacto</A>

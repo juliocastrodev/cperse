@@ -23,10 +23,10 @@ const Home = () => {
       {/* TODO: remove example section */}
       <section
         style={{
-          padding: "var(--space-l)",
+          padding: "var(--space-3)",
           display: "flex",
           "flex-direction": "column",
-          gap: "var(--space-m)",
+          gap: "var(--space-2)",
         }}
       >
         <h2>Lorem title</h2>

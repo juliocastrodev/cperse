@@ -1,19 +1,15 @@
 .section {
-  height: 640px;
   background-image: url("/src/assets/home/intro.webp");
   background-size: cover;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-m);
+  height: 640px;
+  padding: 215px 95px;
 
-    position: absolute;
-    top: 215px;
-    left: 95px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 
-    h1 {
-      color: var(--color-primary);
-    }
+  h1 {
+    color: var(--color-primary);
   }
 }

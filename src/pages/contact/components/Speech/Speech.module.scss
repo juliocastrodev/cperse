@@ -2,17 +2,17 @@
   display: flex;
   width: 500px;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-4);
 
   .content {
     display: flex;
     flex-direction: column;
-    gap: var(--space-m);
+    gap: var(--space-2);
   }
 
   .email {
     display: flex;
     align-items: center;
-    gap: var(--space-s);
+    gap: var(--space-1);
   }
 }

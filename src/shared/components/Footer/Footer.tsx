@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss"
 
 export const Footer = () => {
   return (
-    <footer class={styles.container}>
+    <footer class={styles.footer}>
       <div class={styles.icons}>
         <MediumIcon />
         <LinkedInIcon />

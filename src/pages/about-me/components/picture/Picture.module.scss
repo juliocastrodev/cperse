@@ -1,0 +1,25 @@
+.div {
+  position: relative;
+
+  img {
+    border-radius: 50%;
+    width: 295px;
+    height: 295px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    z-index: -1;
+
+    width: 517px;
+    height: 517px;
+    background-color: var(--color-light);
+    border: 24px solid var(--color-primary);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -50%;
+    left: -130%;
+  }
+}
