@@ -1,12 +1,14 @@
 .section {
-  height: 900px;
+  padding: var(--space-3);
+  min-height: calc(112.5 * var(--space-1));
   background-color: color(--color-light);
-  padding-top: 200px;
+  padding-top: calc(25 * var(--space-1));
 
   .content {
     display: flex;
     gap: var(--space-15);
     justify-content: center;
     margin-bottom: var(--space-15);
+    flex-wrap: wrap;
   }
 }

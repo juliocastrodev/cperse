@@ -54,6 +54,9 @@
   --font-size-regular: 16px;
   --font-size-small: 12px;
 
+  // Line heights
+  --line-height-regular: 24px;
+
   @include small-device {
     --font-size-h1: 35px;
     --font-size-h2: 25px;
@@ -78,6 +81,8 @@
     --space-13: 65px;
     --space-14: 70px;
     --space-15: 75px;
+
+    --line-height-regular: 15px;
   }
 }
 
@@ -127,7 +132,7 @@ p,
 span {
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-regular);
-  line-height: 24px;
+  line-height: var(--line-height-regular);
 }
 a {
   color: var(--color-primary);

@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  width: 500px;
+  width: calc(62.5 * var(--space-1));
   flex-direction: column;
   gap: var(--space-4);
 

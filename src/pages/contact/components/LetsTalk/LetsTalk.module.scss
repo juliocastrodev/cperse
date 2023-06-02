@@ -1,7 +1,11 @@
+@import "/src/global.scss";
+
 .section {
-  height: 900px;
+  height: calc(112.5 * var(--space-1));
+  padding: var(--space-3);
   background-color: color(--color-light);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }

@@ -3,8 +3,8 @@
 
   img {
     border-radius: 50%;
-    width: 295px;
-    height: 295px;
+    width: calc(37 * var(--space-1));
+    height: calc(37 * var(--space-1));
   }
 
   &::before {
@@ -12,14 +12,14 @@
     display: block;
     z-index: -1;
 
-    width: 517px;
-    height: 517px;
+    width: calc(64.625 * var(--space-1));
+    height: calc(64.625 * var(--space-1));
     background-color: var(--color-light);
-    border: 24px solid var(--color-primary);
+    border: var(--space-3) solid var(--color-primary);
     border-radius: 50%;
 
     position: absolute;
-    top: -50%;
-    left: -130%;
+    top: calc(-18.75 * var(--space-1));
+    left: calc(-48 * var(--space-1));
   }
 }

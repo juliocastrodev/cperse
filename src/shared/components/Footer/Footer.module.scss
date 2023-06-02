@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
 
-  height: calc(47.5 * var(--space-1));
+  min-height: calc(47.5 * var(--space-1));
+  flex-grow: 1;
+
   padding: var(--space-14) var(--space-11) var(--space-3) var(--space-3);
   background-color: var(--color-dark);
   color: var(--color-light);

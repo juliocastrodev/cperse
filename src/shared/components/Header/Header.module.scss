@@ -23,10 +23,6 @@
   @include small-device {
     justify-content: space-around;
 
-    p {
-      line-height: var(--space-3);
-    }
-
     .hamburger {
       display: block;
     }

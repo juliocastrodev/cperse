@@ -11,7 +11,7 @@ export const Chat = () => {
       </Card>
 
       <Card>
-        <p style={{ "text-align": "center" }}>
+        <p>
           🚀 ¿Crees que encajo en tu proyecto?
           <br />
           Escríbeme a 📩 <Bold>cyn.perera@gmail.com</Bold>
