@@ -16,14 +16,14 @@
     gap: var(--space-2);
   }
 
-  .hamburger {
+  .menu {
     display: none;
   }
 
   @include small-device {
     justify-content: space-around;
 
-    .hamburger {
+    .menu {
       display: block;
     }
   }

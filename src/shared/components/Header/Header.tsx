@@ -1,6 +1,7 @@
 import { toSpaceVar } from "../../utils/spacing"
 import { HamburgerIcon } from "../Icons/HamburgerIcon"
 import { MailIcon } from "../Icons/MailIcon"
+import { SideMenu } from "../SideMenu/SideMenu"
 import styles from "./Header.module.scss"
 
 export const Header = () => {
@@ -14,8 +15,8 @@ export const Header = () => {
         <p>cyn.perera@gmail.com</p>
       </div>
 
-      <div class={styles.hamburger}>
-        <HamburgerIcon />
+      <div class={styles.menu}>
+        <SideMenu />
       </div>
     </header>
   )
