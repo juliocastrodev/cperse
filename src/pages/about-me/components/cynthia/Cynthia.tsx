@@ -1,4 +1,3 @@
-import { For } from "solid-js"
 import { Tag } from "../../../../shared/components/Tag/Tag"
 import { Picture } from "../picture/Picture"
 
@@ -29,22 +28,22 @@ export const Cynthia = () => (
         </p>
       </div>
 
-      <ul class="flex gap-2 flex-wrap">
-        <For
-          each={[
-            "UX/UI",
-            "Diseño Gráfico",
-            "Branding",
-            "Diseño de Producto",
-            "Marketing",
-          ]}
-        >
-          {(tag) => (
-            <li>
-              <Tag class="text-xs">{tag}</Tag>
-            </li>
-          )}
-        </For>
+      <ul class="flex gap-2 flex-wrap [&_*]:text-xs">
+        <li>
+          <Tag>UX/UI</Tag>
+        </li>
+        <li>
+          <Tag>Diseño Gráfico</Tag>
+        </li>
+        <li>
+          <Tag>Branding</Tag>
+        </li>
+        <li>
+          <Tag>Diseño de Producto</Tag>
+        </li>
+        <li>
+          <Tag>Marketing</Tag>
+        </li>
       </ul>
     </div>
   </div>
