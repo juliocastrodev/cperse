@@ -7,7 +7,7 @@ export const MediumIcon = (props: IconProps) => (
     viewBox="0 0 186 31"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    style={{ ...props }}
+    {...props}
   >
     <g clip-path="url(#clip0_330_779)">
       <path

@@ -1,12 +1,10 @@
-/* @refresh reload */
 import { render } from "solid-js/web"
 
-import "./global.scss"
 import "@fontsource/poppins/400.css"
 import "@fontsource/poppins/500.css"
 import "@fontsource/poppins/600.css"
 import "@fontsource/poppins/700.css"
-import "modern-normalize"
+import "./global.css"
 
 import App from "./App"
 

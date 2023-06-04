@@ -1,13 +1,11 @@
 import { MailIcon } from "../../../../shared/components/Icons/MailIcon"
-import { Bold } from "../../../../shared/components/Bold/Bold"
-import styles from "./Speech.module.scss"
 
 export const Speech = () => {
   return (
-    <div class={styles.container}>
+    <div class="flex flex-col gap-6 max-w-lg">
       <h2>¿Hablamos?</h2>
 
-      <div class={styles.content}>
+      <div class="flex flex-col gap-4">
         <p>
           ¿Estás buscando un perfil que aporte creatividad, optimismo y pasión a
           tu equipo? ¡Estás en el lugar indicado!
@@ -18,10 +16,10 @@ export const Speech = () => {
         <p> 👋 Todo empieza con un “hola”.</p>
       </div>
 
-      <div class={styles.email}>
+      <div class="flex items-center gap-2">
         <MailIcon />
 
-        <Bold>cyn.perera@gmail.com</Bold>
+        <p class="font-semibold">cyn.perera@gmail.com</p>
       </div>
     </div>
   )

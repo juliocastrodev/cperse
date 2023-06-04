@@ -37,11 +37,8 @@ export const Sticky: ParentComponent = (props) => {
   return (
     <div
       ref={containerElem}
-      style={{
-        top: offsetFor(containerElem!) + "px",
-        position: "sticky",
-        "z-index": 2,
-      }}
+      class="sticky z-20"
+      style={{ top: offsetFor(containerElem!) + "px" }}
     >
       {props.children}
     </div>

@@ -1,24 +1,38 @@
 import { A } from "@solidjs/router"
-import styles from "./NavBar.module.scss"
+import { PATHS } from "../../routing/paths-config"
 
 export const NavBar = () => {
   return (
-    <nav class={styles.nav}>
-      <ul>
-        <li>
-          <A href="/">cperse.com</A>
+    <nav class="hidden sm:block py-6 px-24 bg-light shadow">
+      <ul class="flex items-center gap-12">
+        <li class="mr-auto">
+          <A href={PATHS.HOME} class="font-semibold text-dark">
+            cperse.com
+          </A>
         </li>
+
         <li>
-          <A href="/">Inicio</A>
+          <A href={PATHS.HOME} class="font-semibold text-dark">
+            Inicio
+          </A>
         </li>
+
         <li>
-          <A href="#">Portfolio</A>
+          <A href="#" class="font-semibold text-dark">
+            Portfolio
+          </A>
         </li>
+
         <li>
-          <A href="/about-me">Sobre mí</A>
+          <A href={PATHS.ABOUT_ME} class="font-semibold text-dark">
+            Sobre mí
+          </A>
         </li>
+
         <li>
-          <A href="/contact">Contacto</A>
+          <A href={PATHS.CONTACT} class="font-semibold text-primary">
+            Contacto
+          </A>
         </li>
       </ul>
     </nav>

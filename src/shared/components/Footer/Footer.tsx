@@ -1,17 +1,22 @@
-import { toSpaceVar } from "../../utils/spacing"
+import clsx from "clsx"
 import { LinkedInIcon } from "../Icons/LinkedInIcon"
 import { MediumIcon } from "../Icons/MediumIcon"
-import styles from "./Footer.module.scss"
 
 export const Footer = () => {
   return (
-    <footer class={styles.footer}>
-      <div class={styles.icons}>
-        <MediumIcon width={toSpaceVar(186)} height={toSpaceVar(31)} />
-        <LinkedInIcon width={toSpaceVar(52)} height={toSpaceVar(58)} />
+    <footer
+      class={clsx(
+        "bg-dark text-light",
+        "pt-28 pr-20 pb-5 pl-5",
+        "flex flex-col justify-between flex-1 gap-40"
+      )}
+    >
+      <div class="flex items-center self-end gap-12">
+        <MediumIcon class="w-44 h-8" />
+        <LinkedInIcon class="w-13 h-14" />
       </div>
 
-      <p class={styles.credits}>
+      <p class="text-xs">
         Web diseñada por Cynthia Perera y desarrollada por Julio Castro
       </p>
     </footer>

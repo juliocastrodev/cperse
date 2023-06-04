@@ -1,5 +1,6 @@
 import { Route, Router, Routes } from "@solidjs/router"
 import { lazy } from "solid-js"
+import { PATHS } from "./shared/routing/paths-config"
 
 const Home = lazy(() => import("./pages/home/Home"))
 const Contact = lazy(() => import("./pages/contact/Contact"))
@@ -9,9 +10,9 @@ const App = () => {
   return (
     <Router base="/cperse">
       <Routes>
-        <Route path="/contact" component={Contact} />
-        <Route path="/about-me" component={AboutMe} />
-        <Route path="/" component={Home} />
+        <Route path={PATHS.CONTACT} component={Contact} />
+        <Route path={PATHS.ABOUT_ME} component={AboutMe} />
+        <Route path={PATHS.HOME} component={Home} />
       </Routes>
     </Router>
   )

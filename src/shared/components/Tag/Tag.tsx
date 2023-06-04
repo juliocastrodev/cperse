@@ -1,6 +1,19 @@
-import { ParentComponent } from "solid-js"
-import styles from "./Tag.module.scss"
+import { JSX, ParentComponent, splitProps } from "solid-js"
 
-export const Tag: ParentComponent = (props) => (
-  <span class={styles.span}>{props.children}</span>
-)
+type Props = JSX.HTMLAttributes<HTMLSpanElement>
+
+export const Tag: ParentComponent<Props> = (props) => {
+  const [{ children, class: otherClasses }, rest] = splitProps(props, [
+    "children",
+    "class",
+  ])
+
+  return (
+    <span
+      class={`p-1 text-primary rounded-md border border-primary ${otherClasses}`}
+      {...rest}
+    >
+      {children}
+    </span>
+  )
+}
